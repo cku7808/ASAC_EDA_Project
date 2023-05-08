@@ -37,23 +37,22 @@
   
 ### EDA (by Tableau)
 - 성별 결핍 영양소
-
   ![성별 결핍 영양](./ASAC_EDA_Project/eda/결핍영양분.png)
+  - 여성 결핍 영양 : 칼륨, 에너지, 비타민a, 칼슘, 엽산, 비타민c, 지방, 철, 니아신
+  - 남성 결핍 영양 : 칼륨, 비타민a, 에너지, 칼슘, 비타민c, 지방
   
 - 공통 음식 성별 선호 차이
-
-  ![공통 음식 성별 선호 차이](./ASAC_EDA_Project/eda/공통 음식 순위 차이.png)
+  <img src="./ASAC_EDA_Project/eda/공통 음식 순위 차이.png">
   
 - 선호와 결핍 영양분의 관계 (막대 그래프)  
+  <img src="./ASAC_EDA_Project/eda/20대 여성.png">
+  <img src="./ASAC_EDA_Project/eda/20대 남성.png">
+  - 선호와 결핍 영양분 간의 반비례 관계 확인
 
-  ![선호와 결핍 영양분의 관계](./ASAC_EDA_Project/eda/20대 여성.png)  
-  
-  ![선호와 결핍 영양분의 관계](./ASAC_EDA_Project/eda/20대 남성.png)  
-  
 - 선호와 결핍 영양분의 관계  
-
-  ![선호와 결핍 영양분의 관계](./ASAC_EDA_Project/eda/결핍 영양분과 다빈도 음식의 관계 - 여성.png)  
-  ![선호와 결핍 영양분의 관계](./ASAC_EDA_Project/eda/결핍 영양분과 다빈도 음식의 관계 - 남성.png)  
+  <img src="./ASAC_EDA_Project/eda/결핍 영양분과 다빈도 음식의 관계 - 여성.png">
+  <img src="./ASAC_EDA_Project/eda/결핍 영양분과 다빈도 음식의 관계 - 남성.png">
+  - 선호와 결핍 영양분 간의 반비례 관계 확인
   
 ### 결론
 - 선호도가 높은 음식이 다량의 결핍 영양분을 포함하는 것은 아님, 오히려 반비례하는 모습을 보임
