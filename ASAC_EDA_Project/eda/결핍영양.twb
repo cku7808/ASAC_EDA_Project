@@ -1,0 +1,1672 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='female_20s_standard+' inline='true' name='federated.1uf4oz50k4l14b167ydoa0x7alyk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='female_20s_standard' name='textscan.1qhwgp70icij3w170r69u1iadgzc'>
+            <connection class='textscan' directory='C:/Users/NT550-052/OneDrive/바탕 화면/ASAC/프로젝트/EDA 개인프로젝트/data/final' filename='female_20s_standard.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qhwgp70icij3w170r69u1iadgzc' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='영양소' ordinal='1' />
+            <column datatype='string' name='성별' ordinal='2' />
+            <column datatype='string' name='연령' ordinal='3' />
+            <column datatype='real' name='기준 섭취량' ordinal='4' />
+            <column datatype='real' name='평균' ordinal='5' />
+            <column datatype='real' name='섭취량-기준' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1qhwgp70icij3w170r69u1iadgzc' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='영양소' ordinal='1' />
+              <column datatype='string' name='성별' ordinal='2' />
+              <column datatype='string' name='연령' ordinal='3' />
+              <column datatype='real' name='기준 섭취량' ordinal='4' />
+              <column datatype='real' name='평균' ordinal='5' />
+              <column datatype='real' name='섭취량-기준' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1qhwgp70icij3w170r69u1iadgzc' name='male_20s_standard.csv' table='[male_20s_standard#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='영양소' ordinal='1' />
+              <column datatype='string' name='성별' ordinal='2' />
+              <column datatype='string' name='연령' ordinal='3' />
+              <column datatype='real' name='기준 섭취량' ordinal='4' />
+              <column datatype='real' name='평균' ordinal='5' />
+              <column datatype='real' name='섭취량-기준' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[F1]' />
+          <map key='[F1]' value='[female_20s_standard.csv].[F1]' />
+          <map key='[기준 섭취량 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[기준 섭취량]' />
+          <map key='[기준 섭취량]' value='[female_20s_standard.csv].[기준 섭취량]' />
+          <map key='[섭취량-기준 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[섭취량-기준]' />
+          <map key='[섭취량-기준]' value='[female_20s_standard.csv].[섭취량-기준]' />
+          <map key='[성별 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[성별]' />
+          <map key='[성별]' value='[female_20s_standard.csv].[성별]' />
+          <map key='[연령 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[연령]' />
+          <map key='[연령]' value='[female_20s_standard.csv].[연령]' />
+          <map key='[영양소 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[영양소]' />
+          <map key='[영양소]' value='[female_20s_standard.csv].[영양소]' />
+          <map key='[평균 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[평균]' />
+          <map key='[평균]' value='[female_20s_standard.csv].[평균]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영양소</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[영양소]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>영양소</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>성별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[성별]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>성별</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연령</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[연령]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>연령</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준 섭취량</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[기준 섭취량]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>기준 섭취량</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[평균]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>평균</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>섭취량-기준</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[섭취량-기준]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>섭취량-기준</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영양소</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[영양소 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>영양소</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>성별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[성별 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>성별</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연령</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[연령 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>연령</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준 섭취량</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[기준 섭취량 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>기준 섭취량</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[평균 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>평균</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>섭취량-기준</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[섭취량-기준 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>섭취량-기준</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='F1 (male 20s standard.csv)' datatype='integer' name='[F1 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='female_20s_standard.csv' datatype='table' name='[__tableau_internal_object_id__].[female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='male_20s_standard.csv' datatype='table' name='[__tableau_internal_object_id__].[male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0]' role='measure' type='quantitative' />
+      <column caption='기준 섭취량 (Male 20S Standard.Csv)' datatype='real' name='[기준 섭취량 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <column caption='섭취량-기준 (Male 20S Standard.Csv)' datatype='real' name='[섭취량-기준 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <column caption='성별 (Male 20S Standard.Csv)' datatype='string' name='[성별 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='연령 (Male 20S Standard.Csv)' datatype='string' name='[연령 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='영양소 (Male 20S Standard.Csv)' datatype='string' name='[영양소 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='평균 (Male 20S Standard.Csv)' datatype='real' name='[평균 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='female_20s_standard.csv' id='female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3'>
+            <properties context=''>
+              <relation connection='textscan.1qhwgp70icij3w170r69u1iadgzc' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='영양소' ordinal='1' />
+                  <column datatype='string' name='성별' ordinal='2' />
+                  <column datatype='string' name='연령' ordinal='3' />
+                  <column datatype='real' name='기준 섭취량' ordinal='4' />
+                  <column datatype='real' name='평균' ordinal='5' />
+                  <column datatype='real' name='섭취량-기준' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='male_20s_standard.csv' id='male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0'>
+            <properties context=''>
+              <relation connection='textscan.1qhwgp70icij3w170r69u1iadgzc' name='male_20s_standard.csv' table='[male_20s_standard#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='영양소' ordinal='1' />
+                  <column datatype='string' name='성별' ordinal='2' />
+                  <column datatype='string' name='연령' ordinal='3' />
+                  <column datatype='real' name='기준 섭취량' ordinal='4' />
+                  <column datatype='real' name='평균' ordinal='5' />
+                  <column datatype='real' name='섭취량-기준' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[영양소]' />
+              <expression op='[영양소 (male_20s_standard.csv)]' />
+            </expression>
+            <first-end-point object-id='female_20s_standard.csv_E1F06AD2959F406D84AD61BC82E298E3' />
+            <second-end-point object-id='male_20s_standard.csv_D87B81210405481A9B1920D7E7F2D1B0' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='female_20s_standard+(2)' inline='true' name='federated.1sdhb1w0z018wq1afyl2z1m9elxq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='female_20s_standard' name='textscan.1i9kwlb1d90cxa11ozyld1oxlcad'>
+            <connection class='textscan' directory='C:/Users/NT550-052/OneDrive/바탕 화면/ASAC/프로젝트/EDA 개인프로젝트/data/final' filename='female_20s_standard.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1i9kwlb1d90cxa11ozyld1oxlcad' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='영양소' ordinal='1' />
+            <column datatype='string' name='성별' ordinal='2' />
+            <column datatype='string' name='연령' ordinal='3' />
+            <column datatype='real' name='기준 섭취량' ordinal='4' />
+            <column datatype='real' name='평균' ordinal='5' />
+            <column datatype='real' name='섭취량-기준' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1i9kwlb1d90cxa11ozyld1oxlcad' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='영양소' ordinal='1' />
+              <column datatype='string' name='성별' ordinal='2' />
+              <column datatype='string' name='연령' ordinal='3' />
+              <column datatype='real' name='기준 섭취량' ordinal='4' />
+              <column datatype='real' name='평균' ordinal='5' />
+              <column datatype='real' name='섭취량-기준' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1i9kwlb1d90cxa11ozyld1oxlcad' name='male_20s_standard.csv' table='[male_20s_standard#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='영양소' ordinal='1' />
+              <column datatype='string' name='성별' ordinal='2' />
+              <column datatype='string' name='연령' ordinal='3' />
+              <column datatype='real' name='기준 섭취량' ordinal='4' />
+              <column datatype='real' name='평균' ordinal='5' />
+              <column datatype='real' name='섭취량-기준' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[F1]' />
+          <map key='[F1]' value='[female_20s_standard.csv].[F1]' />
+          <map key='[기준 섭취량 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[기준 섭취량]' />
+          <map key='[기준 섭취량]' value='[female_20s_standard.csv].[기준 섭취량]' />
+          <map key='[섭취량-기준 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[섭취량-기준]' />
+          <map key='[섭취량-기준]' value='[female_20s_standard.csv].[섭취량-기준]' />
+          <map key='[성별 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[성별]' />
+          <map key='[성별]' value='[female_20s_standard.csv].[성별]' />
+          <map key='[연령 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[연령]' />
+          <map key='[연령]' value='[female_20s_standard.csv].[연령]' />
+          <map key='[영양소 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[영양소]' />
+          <map key='[영양소]' value='[female_20s_standard.csv].[영양소]' />
+          <map key='[평균 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[평균]' />
+          <map key='[평균]' value='[female_20s_standard.csv].[평균]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영양소</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[영양소]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>영양소</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>성별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[성별]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>성별</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연령</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[연령]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>연령</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준 섭취량</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[기준 섭취량]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>기준 섭취량</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[평균]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>평균</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>섭취량-기준</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[섭취량-기준]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>섭취량-기준</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영양소</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[영양소 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>영양소</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>성별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[성별 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>성별</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연령</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[연령 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>연령</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준 섭취량</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[기준 섭취량 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>기준 섭취량</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[평균 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>평균</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>섭취량-기준</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[섭취량-기준 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>섭취량-기준</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='계산1' datatype='boolean' name='[Calculation_856528377693945856]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[섭취량-기준] &lt; 0' />
+      </column>
+      <column caption='F1 (male 20s standard.csv)' datatype='integer' name='[F1 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='female_20s_standard.csv' datatype='table' name='[__tableau_internal_object_id__].[female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='male_20s_standard.csv' datatype='table' name='[__tableau_internal_object_id__].[male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508]' role='measure' type='quantitative' />
+      <column caption='기준 섭취량 (Male 20S Standard.Csv)' datatype='real' name='[기준 섭취량 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <column caption='섭취량-기준 (Male 20S Standard.Csv)' datatype='real' name='[섭취량-기준 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <column caption='성별 (Male 20S Standard.Csv)' datatype='string' name='[성별 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='연령 (Male 20S Standard.Csv)' datatype='string' name='[연령 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='영양소 (Male 20S Standard.Csv)' datatype='string' name='[영양소 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='평균 (Male 20S Standard.Csv)' datatype='real' name='[평균 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='female_20s_standard.csv' id='female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1'>
+            <properties context=''>
+              <relation connection='textscan.1i9kwlb1d90cxa11ozyld1oxlcad' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='영양소' ordinal='1' />
+                  <column datatype='string' name='성별' ordinal='2' />
+                  <column datatype='string' name='연령' ordinal='3' />
+                  <column datatype='real' name='기준 섭취량' ordinal='4' />
+                  <column datatype='real' name='평균' ordinal='5' />
+                  <column datatype='real' name='섭취량-기준' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='male_20s_standard.csv' id='male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508'>
+            <properties context=''>
+              <relation connection='textscan.1i9kwlb1d90cxa11ozyld1oxlcad' name='male_20s_standard.csv' table='[male_20s_standard#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='영양소' ordinal='1' />
+                  <column datatype='string' name='성별' ordinal='2' />
+                  <column datatype='string' name='연령' ordinal='3' />
+                  <column datatype='real' name='기준 섭취량' ordinal='4' />
+                  <column datatype='real' name='평균' ordinal='5' />
+                  <column datatype='real' name='섭취량-기준' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[영양소]' />
+              <expression op='[영양소 (male_20s_standard.csv)]' />
+            </expression>
+            <first-end-point object-id='female_20s_standard.csv_CB08DF82249E4F449F43D8E19C7B27D1' />
+            <second-end-point object-id='male_20s_standard.csv_AAB3FE6FC4244E3DABB94BD1F0640508' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='female_20s_standard+(3)' inline='true' name='federated.0aukyu71b008731h2xjkk030svwx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='female_20s_standard' name='textscan.13oxrug1qzg8dj11yk0541ux8aqy'>
+            <connection class='textscan' directory='C:/Users/NT550-052/OneDrive/바탕 화면/ASAC/프로젝트/EDA 개인프로젝트/data/tableau/new' filename='female_20s_standard.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.13oxrug1qzg8dj11yk0541ux8aqy' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='영양소' ordinal='0' />
+            <column datatype='string' name='성별' ordinal='1' />
+            <column datatype='string' name='연령' ordinal='2' />
+            <column datatype='real' name='기준 섭취량' ordinal='3' />
+            <column datatype='real' name='평균' ordinal='4' />
+            <column datatype='real' name='섭취량-기준' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.13oxrug1qzg8dj11yk0541ux8aqy' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='string' name='영양소' ordinal='0' />
+              <column datatype='string' name='성별' ordinal='1' />
+              <column datatype='string' name='연령' ordinal='2' />
+              <column datatype='real' name='기준 섭취량' ordinal='3' />
+              <column datatype='real' name='평균' ordinal='4' />
+              <column datatype='real' name='섭취량-기준' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.13oxrug1qzg8dj11yk0541ux8aqy' name='male_20s_standard.csv' table='[male_20s_standard#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='string' name='영양소' ordinal='0' />
+              <column datatype='string' name='성별' ordinal='1' />
+              <column datatype='string' name='연령' ordinal='2' />
+              <column datatype='real' name='기준 섭취량' ordinal='3' />
+              <column datatype='real' name='평균' ordinal='4' />
+              <column datatype='real' name='섭취량-기준' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[기준 섭취량 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[기준 섭취량]' />
+          <map key='[기준 섭취량]' value='[female_20s_standard.csv].[기준 섭취량]' />
+          <map key='[섭취량-기준 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[섭취량-기준]' />
+          <map key='[섭취량-기준]' value='[female_20s_standard.csv].[섭취량-기준]' />
+          <map key='[성별 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[성별]' />
+          <map key='[성별]' value='[female_20s_standard.csv].[성별]' />
+          <map key='[연령 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[연령]' />
+          <map key='[연령]' value='[female_20s_standard.csv].[연령]' />
+          <map key='[영양소 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[영양소]' />
+          <map key='[영양소]' value='[female_20s_standard.csv].[영양소]' />
+          <map key='[평균 (male_20s_standard.csv)]' value='[male_20s_standard.csv].[평균]' />
+          <map key='[평균]' value='[female_20s_standard.csv].[평균]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영양소</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[영양소]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>영양소</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>성별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[성별]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>성별</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연령</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[연령]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>연령</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준 섭취량</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[기준 섭취량]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>기준 섭취량</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[평균]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>평균</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>섭취량-기준</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[섭취량-기준]</local-name>
+            <parent-name>[female_20s_standard.csv]</parent-name>
+            <remote-alias>섭취량-기준</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영양소</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[영양소 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>영양소</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_9CC6A8238FA542088105380CDF566938]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>성별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[성별 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>성별</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_9CC6A8238FA542088105380CDF566938]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연령</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[연령 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>연령</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_9CC6A8238FA542088105380CDF566938]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준 섭취량</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[기준 섭취량 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>기준 섭취량</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_9CC6A8238FA542088105380CDF566938]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[평균 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>평균</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_9CC6A8238FA542088105380CDF566938]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>섭취량-기준</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[섭취량-기준 (male_20s_standard.csv)]</local-name>
+            <parent-name>[male_20s_standard.csv]</parent-name>
+            <remote-alias>섭취량-기준</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[male_20s_standard.csv_9CC6A8238FA542088105380CDF566938]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='female_20s_standard.csv' datatype='table' name='[__tableau_internal_object_id__].[female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='male_20s_standard.csv' datatype='table' name='[__tableau_internal_object_id__].[male_20s_standard.csv_9CC6A8238FA542088105380CDF566938]' role='measure' type='quantitative' />
+      <column caption='기준 섭취량 (Male 20S Standard.Csv)' datatype='real' name='[기준 섭취량 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <column caption='섭취량-기준 (Male 20S Standard.Csv)' datatype='real' name='[섭취량-기준 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <column caption='성별 (Male 20S Standard.Csv)' datatype='string' name='[성별 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='연령 (Male 20S Standard.Csv)' datatype='string' name='[연령 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='영양소 (Male 20S Standard.Csv)' datatype='string' name='[영양소 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+      <column caption='평균 (Male 20S Standard.Csv)' datatype='real' name='[평균 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='female_20s_standard.csv' id='female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632'>
+            <properties context=''>
+              <relation connection='textscan.13oxrug1qzg8dj11yk0541ux8aqy' name='female_20s_standard.csv' table='[female_20s_standard#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='영양소' ordinal='0' />
+                  <column datatype='string' name='성별' ordinal='1' />
+                  <column datatype='string' name='연령' ordinal='2' />
+                  <column datatype='real' name='기준 섭취량' ordinal='3' />
+                  <column datatype='real' name='평균' ordinal='4' />
+                  <column datatype='real' name='섭취량-기준' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='male_20s_standard.csv' id='male_20s_standard.csv_9CC6A8238FA542088105380CDF566938'>
+            <properties context=''>
+              <relation connection='textscan.13oxrug1qzg8dj11yk0541ux8aqy' name='male_20s_standard.csv' table='[male_20s_standard#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='영양소' ordinal='0' />
+                  <column datatype='string' name='성별' ordinal='1' />
+                  <column datatype='string' name='연령' ordinal='2' />
+                  <column datatype='real' name='기준 섭취량' ordinal='3' />
+                  <column datatype='real' name='평균' ordinal='4' />
+                  <column datatype='real' name='섭취량-기준' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[영양소]' />
+              <expression op='[영양소 (male_20s_standard.csv)]' />
+            </expression>
+            <first-end-point object-id='female_20s_standard.csv_7743AFDB0D854BA68ED1205A54F88632' />
+            <second-end-point object-id='male_20s_standard.csv_9CC6A8238FA542088105380CDF566938' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='20대 남성 결핍 영양'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='female_20s_standard+(3)' name='federated.0aukyu71b008731h2xjkk030svwx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aukyu71b008731h2xjkk030svwx'>
+            <column-instance column='[섭취량-기준 (male_20s_standard.csv)]' derivation='None' name='[none:섭취량-기준 (male_20s_standard.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[영양소 (male_20s_standard.csv)]' derivation='None' name='[none:영양소 (male_20s_standard.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[섭취량-기준 (male_20s_standard.csv)]' derivation='Sum' name='[sum:섭취량-기준 (male_20s_standard.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='섭취량-기준 (Male 20S Standard.Csv)' datatype='real' name='[섭취량-기준 (male_20s_standard.csv)]' role='measure' type='quantitative' />
+            <column caption='영양소 (Male 20S Standard.Csv)' datatype='string' name='[영양소 (male_20s_standard.csv)]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0aukyu71b008731h2xjkk030svwx].[none:섭취량-기준 (male_20s_standard.csv):qk]' included-values='in-range'>
+            <min>-709.76999999999998</min>
+            <max>-1.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소 (male_20s_standard.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:영양소 (male_20s_standard.csv):nk]' />
+              <groupfilter function='member' level='[none:영양소 (male_20s_standard.csv):nk]' member='&quot;당&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소 (male_20s_standard.csv):nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준 (male_20s_standard.csv):qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0aukyu71b008731h2xjkk030svwx].[none:섭취량-기준 (male_20s_standard.csv):qk]</column>
+            <column>[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소 (male_20s_standard.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준 (male_20s_standard.csv):qk]' field-type='quantitative' reverse='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준 (male_20s_standard.csv):qk]' scope='rows' value='섭취량-기준' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준 (male_20s_standard.csv):qk]' />
+              <text column='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준 (male_20s_standard.csv):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준 (male_20s_standard.csv):qk]</rows>
+        <cols>[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소 (male_20s_standard.csv):nk]</cols>
+      </table>
+      <simple-id uuid='{F02E6C48-6CE6-4AF0-B15D-F529905713A1}' />
+    </worksheet>
+    <worksheet name='20대 여성 결핍 영양'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='female_20s_standard+(3)' name='federated.0aukyu71b008731h2xjkk030svwx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aukyu71b008731h2xjkk030svwx'>
+            <column-instance column='[섭취량-기준]' derivation='None' name='[none:섭취량-기준:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[영양소]' derivation='None' name='[none:영양소:nk]' pivot='key' type='nominal' />
+            <column-instance column='[섭취량-기준]' derivation='Sum' name='[sum:섭취량-기준:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[섭취량-기준]' role='measure' type='quantitative' />
+            <column datatype='string' name='[영양소]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0aukyu71b008731h2xjkk030svwx].[none:섭취량-기준:qk]' included-values='in-range'>
+            <min>-1447.0300000000002</min>
+            <max>-1.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:영양소:nk]' />
+              <groupfilter function='member' level='[none:영양소:nk]' member='&quot;당&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0aukyu71b008731h2xjkk030svwx].[none:섭취량-기준:qk]</column>
+            <column>[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준:qk]' field-type='quantitative' reverse='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준:qk]' />
+              <text column='[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0aukyu71b008731h2xjkk030svwx].[sum:섭취량-기준:qk]</rows>
+        <cols>[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소:nk]</cols>
+      </table>
+      <simple-id uuid='{A8B9A3A2-5594-4F5C-A919-A8AFA4788AC2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='대시보드 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='1' name='20대 여성 결핍 영양' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='3' name='20대 남성 결핍 영양' w='98400' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='5' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='4' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='1' is-fixed='true' name='20대 여성 결핍 영양' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='20대 남성 결핍 영양' w='98400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E2AF1C62-22D1-4E16-9600-D7677E8992EC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='dashboard' maximized='true' name='대시보드 1'>
+      <viewpoints>
+        <viewpoint name='20대 남성 결핍 영양'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='20대 여성 결핍 영양'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+      <simple-id uuid='{70E70FA4-1F1E-438D-A13E-E06CBDDE9FCF}' />
+    </window>
+    <window class='worksheet' name='20대 여성 결핍 영양'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0aukyu71b008731h2xjkk030svwx].[none:섭취량-기준:qk]</field>
+            <field>[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E15C522D-86C6-472E-B508-B6798DCC987B}' />
+    </window>
+    <window class='worksheet' name='20대 남성 결핍 영양'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0aukyu71b008731h2xjkk030svwx].[none:섭취량-기준 (male_20s_standard.csv):qk]</field>
+            <field>[federated.0aukyu71b008731h2xjkk030svwx].[none:영양소 (male_20s_standard.csv):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EFF04C0B-888A-4395-8E6E-124DD0BEFF60}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='240' name='20대 남성 결핍 영양' width='240'>
+      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
+      4PNapJJPkyUAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='240' name='20대 여성 결핍 영양' width='240'>
+      iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAYAAAA+VemSAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAW9ElEQVR4nO3dSWwc+d3e8W9VL2Rz33dxF7VR20iahTNv8vq1PR6PjUFiwGPA8FwMvC98
+      DJBLbrnlkFsOQXwMjFgZQwZsGYbG847nBUYTMdJoJC4iRYoUV3EX9727a8lBEl8ppNykxF6K
+      fD4XNavZ/f+VVI+q+l/V9TNc13UREU8yk12AiLw6BVjEw1ImwDqSF9k7BVjEw1ImwCKydwqw
+      iIcpwCIepgCLeJgCLOJhCrCIhynAIh6mAIt4mAIs4mEHNsCu6zI0NIRt21vLHMehq6tr66qv
+      vr4+1tfXuXXrFn/961/p7OzUFWHiKQc2wB0dHfzud78jHA4DTwJ98+ZNrl69iuu6jI2N8emn
+      nzI7O0tjYyNHjx6lu7s7yVWL7M2BCrDjOAwODrK0tMS5c+c4duzY1nPz8/OsrKxQX1+Pbdvc
+      vn2bd999F4CCggL6+vr43ve+h2EYySpfZM/8yS5gv4XD4RcOm58ZGRlhcnKSO3fuUF1dzezs
+      LO3t7SwtLVFcXMzKygrFxcVJqFjk1RmpckcOx3Ewzf07IGhtbeXbb7+lpqYGv9/PD3/4Q0zT
+      5Pbt21y8eBHDMHj48CEFBQWsr69jGAaVlZX7Nr5IIhzYAD9jWRYrKyvk5+fv+3uLJNuBD7DI
+      QZbyn4EHPv8jbf/zvyW7jB3V/cOPufCP/zHZZcghlvIBjm6ssTI+muwydrS5OJ/sEuSQ0zGr
+      iIcpwCIepgCLeJgCLOJh+zaJ5To2PZ13mNnw8ffvXMCJrvH5tc849e6HbIx3MbcWIbukluzo
+      HOPzq4Tyy3njZP1+DS9yKO3fLLRh0tR8no2ODsBloK+fusZGXCfCOtm0tBynva2DeQNaWlpo
+      7+jAdV2i0Sjw5MsGO12HbO1wWWSqcGybSCSS7DLkEHv9ANsRurq6KKk5RnFOCIDo6iz9o9P4
+      nTUC6z5y/U+O1J9dM+I+99jv/9cSdrqQw+/zvXaJ8WL6fASDwWSXIYfY6wfYF6T57BvY1jrt
+      t28zOjFBcWU9H/7wBzx+1E8ks4rI1ANaW29QWNVEVnSW/9vaSm5pNYZhbO11Hcd57VJEDpt9
+      O4T2+TM4/9ZbnH9uWfGRo08eFJyjbmtpCZUN+zWqyOGmWWgRD1OARTxMARbxMAVYxMMUYBEP
+      U4BFPEwBFvEwBVjEwxRgEQ9TgEU8TAEW8TAFWMTDFGARD1OARTxMARbxMAVYxMMUYBEPU4BF
+      PEwBFvEwBVjEwxRgEQ9TgEU8TAEW8bB9DbBjRVhcXgNgY3WJkdExwpaDHdlgdHQMy3FxrDBj
+      j8bYjKZuyxQRr9i3G7s7tkVP1z0Wwi7vvXWeiYlpQukmXb2D+NbnKKoopb2rj0xnhfT8Ijq7
+      ennz/KkX3uNZuxXvcD1Ysxwkrx9g12F5eYW0jExOnjnP3ba7gI+6hjoe9nRRVFDOgmNRVVXL
+      3GwHG0aA4zW1LC4+aW5mP21e9rLWKnYqNzdznK3mbCLJsA8BtlmYnyXXn0Yw9KzRl0vvvXYK
+      a05QmpfG7OQ0jmMTtW18uFi2jW3ZGIax1dzMcZwdm5v5Urm5manmZpJcrx9gM0BNXcNWc7P5
+      5SVGJ8aZX1hnNXKf9cp6qkuyuHXrG2qazhCy5rnzzTeU1R3bh/JFDrd9b272THVF1XPPFlF8
+      5FlHs0zeLj2yX8OKHGo6jSTiYQqwiIcpwCIepgCLeJgCLOJhCrCIhynAIh6mAIt4mAIs4mEK
+      sIiHKcAiHqYAi3iYAiziYQqwiIcpwCIepgCLeJgCLOJhCrCIhynAIh6mAIt4mAIs4mEKsIiH
+      KcAiHqYAi3jYvt3Y3XUdRvq7mYukcaH5KA+725le2qSp+TzR2SGGp+apbGgmIzpH/+gkxUeO
+      cvRIyX4NL3Io7VuAcV0KymqY6+8De5WlSCbvXKinvW8IN2rR0tLCnTttGMBb77TQ3tYGzwXY
+      cRwsy9r2tpaVws3NbJtIJJLsMuQQe/0A2xG6urooqTlGcU7W02VRfMEQpj+AadvgDwAGfp8P
+      xwDTMDB9vhe6ExqGQSAQ2F6gP4Wbm/nMHWsWSZTXD7AvSPPZN3DsMCODA0xNTzPbcBRreZSu
+      e9NkFFYTmRmit6cLO5hFlrVI9/1uLCNtW3dCwzBeu5zEMjxYsxwk+3YIbRg+cvMLePutt0lP
+      S+fshQusbUTIycmG8jwWl9fIzc/DcGyWl1fIzMndr6FFDq39C7DpJ7+w8IVlecH0p6MEKSh4
+      2kfX5ycvP3+/hhU51HQaScTDFGARD1OARTxMARbxMAVYxMP2FODBwUFmZmbiVYuI7NGeAjw8
+      PMzs7Gy8ahGRPdrVeeDHjx/T+6A33rWIyB7F3AP39fURDoeZm51LRD0isgcxA/zPX/xzIuoQ
+      kVcQ8xD6n/7xn/D7/fzoRz/CMHTxvkgqiRngYPDJNcymqTNOIqkmZiqjkQjrq0tMTc/hOjbR
+      FP6CvchhE3MPfPfGLdaMVSKb+fybdyq5/9Dm4oXaBJQmIrHE3AMvTA2TXVbNzGAXHb1DRKLb
+      b3sjIskRM8BZuYUsz89QUd/M2WPViahJRHYpZoAr6hspTk/DFwowPbVEVa3uJCmSKmJ+Bq4/
+      3gQcxbYdfL7UvcGcyGEUI8AWvZ1drEX/deY5t7iSxuqyOJclIrsRI8B+aurrmFtcIZSVS0Fu
+      NrqOQyR1xPwM/O1X15lbXmaop51bnf2JqElEdilmgE1/JsdOnuTiO++xPj7AZiKqEpFdiRng
+      d77/96QBju3w3nf/geAu33jp8QT37j8gbDlEN5e5d+8+EdvFjqzT032ftbDOJ4u8rth7YNPE
+      AO5+eZ3NtODu7gDgrtPVO0FtSQYdPQN0tt+ntqaUux3ddHd2UVJRxr173a9dvMhht4sv9Dss
+      LSxTd/4smbF+1XWZmRrDn5FH0Fih4/4qZbVNrOKQnVNIhjmG5UujIL+AtMCjF3ojua67Y3Oz
+      Z8+nIsdRczNJrhgBjnK39TqtNzqpar5ARR4U1zZTV17w0lekpWdg2itEQuW8dbKEu91j+FwL
+      ywqzabsE3SjhSJho1N5VbyTTTN1zz6ap5maSXDECHODk2TepOlLNg5FpnGAuA/fvU1f+3s6/
+      bhjk5heC61A+M0979xB1jccJRha4e7eThhNnSLMW6ero5EjD8R1evj3AqX3aSt+PluSKeQh9
+      88urzLslOOsL1JwoAduN/a6GSf3xZuq3FmTyZknV08elXLxU+qr1ishzYs5JBdJyWZ4ZxgwV
+      sTY7SEFVVayXiEiCxNwDt7z/Y1oSUYmI7FmMANs8Ghpi03K2lmTmFVFZ8vJJLBFJnBiH0CYF
+      Rbk8Hpvk3s17ZJeXk58T82SSiCRIjAAb9Lbf4d79ITLSfczNL+L367SJSKqIOYmVk59LWVkl
+      jm2T5oeNiC6BFEkVMSexmk6/SWn1KsM9/RypPEJ6IqoSkV2JsQd2iUQs0tPTOXnxHGY4jOPu
+      4jywiCREjADbPBrs5H//rz8xPjXKb/7Hf+fG7aHEVCYiMcW8I0fD8VNMjK4wPj1PaVkpPsf5
+      2y8RkYSJOYk1/nCE6eV56mqPsLCwiKNrf0VSRsxJrMrGE/y76hraOrt5+zvfo6z6SCLqEpFd
+      2FWDb38wg0sXL8W7FhHZI7UcFPEwBVjEwxRgEQ9TgEU8TAEW8TAFWMTDFGARD1OARTxMARbx
+      MAVYxMMUYBEP29W10K9i+EEn04sb1Bw9xebMIBPzyxQfOU6mNcvwxBx55bWcrK+M1/Aih0J8
+      AuysMjgyS25hPmkBl4kNk5aWd7l7t50VXN5uaaGtrR3Xrdh6yfONzp7npvAdQF5Ws0ii7G+A
+      XZeHPR0Ec3LwZRRy9nQ9bR39+IMhAEzDxDFcDMA0n3yv2Hl6g4CXBTWVA4zrpnZ9cuDtb4AN
+      g8aT5wCXubGvudPWRWZ+Fb61CW7dukkov4oca5abt24SzC7GMAx8vifdBx3HwTS3fyTfaVmq
+      MExzq7uiSDLEaeszOPfW3z0XyqoXHte8JKwisjdx2308v3cFXvpYRF6ddoMiHqYAi3iYAizi
+      YQqwiIcpwCIepgCLeJgCLOJhCrCIhynAIh6mAIt4mAIs4mEKsIiHKcAiHqYAi3iYAiziYQqw
+      iIcpwCIepgCLeJgCLOJhCrCIhynAIh6mAIt4mAIs4mFxC7Dr2tz6+l+YWQ4zOdRLa+sNRmaW
+      mR0fpLX1Bg/HHsdr6APLdV2uX7/On/70JzY3NxkYGODq1auEw2Hm5+e5cuUK8/PzyS5TEihu
+      N3afGurDDGWyEd5kdiFCS0sLd+60MYfLW++00H63Dbey6IXmYM/6JD1vp2WpwnUdLMtK4Hgu
+      tbW1RCIRfv/73xMKhXj//feJRCJcvXqVjz/+GMuyElqTJFdcmpuZoWx6ekfJz3CZnJwi3R8E
+      DPw+H44BpmFg+rd3ZzAMY1/LSYRE1GzbNrdv36ampobHjx/zl7/8hdOnTzMwMMBvf/tbLly4
+      wODgIFeuXKGqqorvfOc7ca9JUkNcmps5tkVxYTHTj/qwc4uJTPXT19eDHcgi016kt7cHiyCG
+      YWw1B/NkczPDTEibGNM0OX78OMFgkKysLH75y19y5coVGhsbOXv2LA8fPqSmpoaPP/6Yzz77
+      TK1rDpG4HEKbPj/ZOTmEms7gmn58ZeeZX1yhoaAAw7VYWFymMS8/HkMfSIZhUFhYiGVZXLt2
+      jXA4zM9//nP6+/tpa2vjBz/4AZWVlfz5z3/mu9/9brLLlQSKa29MfyD49FGQoqLCp48DFBYW
+      vuwl8jf4/X4++uijrZ+Lioq2Hh87doxjx44loyxJIjW3TTDXjoCbohNzZgDD1OG3lyjACRa5
+      8V+xx79Jdhk7Cr73n/AfaUl2GbIHCnCCudYmhJeTXcbO7GiyK5A9St0pXhGJSQEW8TAFWMTD
+      9BlYksa2bW7dusX09DTvv/8+X331FaFQiHfffZevv/6apaUlPvjgAzIyMpJdasrSHliSJhqN
+      UlZWRnNzM7/+9a+prKzEsixGRkY4d+4cFy9e5Kuvvkp2mSlNAZaEGx8f59q1a/j9fgKBAK2t
+      rfzsZz/jyy+/pLu7m/LyckZGRvjNb37D2bNnk11uSlOAJeHKy8v5/ve/z8bGBjdv3uSTTz6h
+      p6eHjz76iIsXL9Lb20t1dTW/+tWvuHHjRrLL3bX+/n4uX77MF198wcTEBJcvX6a9vZ319XUu
+      X74cl696KsCScKZpEggEsCyLzc1NPv30UxobG3nw4AGRSIRTp07x7bffcv36dT788MNkl7tr
+      ZWVl/PSnP2VqaorPP/+c2tpaKisrWVlZITs7m7W1tX0fU5NYkjT5+fl88sknWz/X1dVtPf7g
+      gw+SUdIr6evrY2hoiPfee48//vGPXLp0ic8//5zS0lKuXbvGL37xC/Ly8uIytgIsr8x1HdiY
+      e/JnCjIyijGM+B9kNjU10dTUxB/+8Afq6urIzs6mtLSUjY0NgsEgy8vLTE1NEQwGKS8v3/oK
+      7X5QgOXVWRtsfvEfILyY7Ep2lP7vfw+BUMLGO3PmDFNTU8zMzPCTn/yEjo4OPvzwQ1ZWVqio
+      qACenDpTgEVSUENDAw0NDVs/X7p0CYDc3FyqqqriMqYCLPKUa0fB2kh2GTszfBjBzG2LFWCR
+      p9yFPiJf/2fATXYp2xgFx0j7t/9l23IFWOQZ1wXHIhUDjGPvuFjngUU8TAEW8TAFWMTDFGAR
+      D1OARTwsTrPQLsN995leWKO68QTByBwPR6epPXaGkLVA78AjKuqPU1WcG5/hRQ6JOO2BXYor
+      6jjfXM/4+DjD4wtcvPgGowO9DIxMcO7CG0yODsRnaJFDJC7NzYIF1RSkRel4OM6JU008HBjH
+      5wuQ5jOxDJOAP4Df78N13a3uhC/rQpjKnfYcxyYSiezpNW4Kd1u0LAtnL+sTTe3b0EajEXB3
+      f6N610rRc8A8+eLITttaXJqb4UZo/T+3OXH6ND5fAGd9kdnHk2wSJMNeZXJqkoht7Kq52X5e
+      +L3fTNNHMBiM/YvP2TTNFN1Envxd+/ewPq4RZefLC1JDIBDECOx+fRy/nwgGqRhiwzB33Nbi
+      cwjtGpSVFjE1Oc7iyiZnzjUzv7jO+TPHOXH6NBur65xpPhmXoUUOk/js3swA9U0vNtpqOvr0
+      WxpmOg2NDTu8SET2SqeRRDxMARbxMAVYxMMUYBEPU4BFPEwBFvEwBVjEwxRgEQ9TgEU8TAEW
+      8TAFWMTDFGARD1OARTxMARbxMAVYxMMUYBEPU4BFPEwBFvEwBVjEwxIeYDuyRte9LlbDqXu7
+      WBGvSHiAuzu7qKypouteV6KHFjlwEh5gJ5BOXk4eaQEj0UOLHDiJ/wwcjbAZCRONpvItwUW8
+      IeEBPtpYQ3dHJ9UNTYkeWuTASXjfksy8Ei5eKtnxOdfd3tLCMH2YwbR4l/VKTJ9/x5r/9ov8
+      YO6tHUvCGObe1scFfEFcMxC3kl7XXtbHNYyn65KCrVXMnbc1w93zFrh/nm9u9rIyIqsrbC7O
+      JbKsXQtkZhPKL9y2/Nm6GMb2z/nu+hyutRn32l6FESrACIS2LXccB8Mwtq+P6+Csz0CKNmwz
+      s8rA2H6Q+bI+XK4dwd1IzW3NMAMYGUXblyczwM9zXXfHDd6LbNvGMIwdNxIvsiwLn893YP59
+      otEogUDqHjXsReq2/vOwgxLcZw7a+vh8u285mupSZg8cD48nx1jdtCgoKWd9ZYHysjKszVXG
+      ph7jumAYPkorKggFU/f/MTuywePFdYoyXWYWNwnmV5JlbOAPpuP3mUQjKyyvmBTm+Rl+NInr
+      umTl5WJvupSVbz+8T5bw+jr+jAyiGxsYdpRV10dBZhoT42NELJei0kLWlhzKynOZm55keSNC
+      cWkFa0tzlJSWk+o7/6W5aeaX18nOL8K3sUZGeRnPZm4mx0YpqjhCwNz/lUjdLfe12Qw+uM/M
+      0jL51efJYp6s7DyM1Rm+/PJfcF2wIlH+7scfc6o6dTb0/99AXy8RxyGcGWJxZYOsUCUL0/0U
+      VZ8gPzOIFV1jcclPYV4umRkufX3LnC7OY3RsIaUCPNbdQ8GlC8wND1BYUMCyGyTDXWZ8co3a
+      2mL8PovZ2TXKytN58OARtXVljI6PY4RXKS4tZ31lkbWwTWFBAb44BOF1jQ33MzSxgC+nmBN5
+      aaxlZFGWbvJodIT7PX0UzixztKGWwtysfR33YB0bvcAgt6CQssp6Th87gt/nw3YcHs/Ok5mR
+      SV5eHrn5eWyuLie70L9p1YK6mlK67tzb9tzU6EPutHUTBfAFKMrJgrQQOVnpCa8zFtfdpP2b
+      bxgcm3lumcX0xBjDw8OEHYOx4UE2ovaTxumBAM/HdHZ6guEH9xmaWkh88buQmZ1HaVk55083
+      4wv4cWyHmbEB2u8PUFhaxurMCHc6H7Df030HeA9skmZs8tebbdy62UpJw1maz2Rg5OaSU1hK
+      YV4WC7OPKS5Onb3UTvyGQTQSpfF4E5tPZ3tNwyC8uUleSRXn87OYegzgMjY6A+4Gm9HUmxU2
+      SOPcpYvM9T7/H5FJ/fHTnGwqI2otUFVbTyiQQV6en/nlNSqrqllfmsMgzPTUEmlpsLK6DhQk
+      azVeKifDz2df3OTWrZuE8o7wyS9OEwyVYfZMAOA3DfIqKvZ9j3mAAwyO4efsG2+S5gd/KBcH
+      8AUCZGdnYgA5OXn4fal9EFJdXkDv8DzN1dkMTi6DAUdqaul7OMyM66OsIhcMP9G1RSLphVxq
+      DjE8NoFhpNZETUF5Pvdvf4PfTKOkyADHIJiew+pcB3fuTpCW6cfnKwYM0gM+ZhYXWFxcwEjL
+      oqSshPR0k4gToDA7I9mrsqOoBSfOnCcjLYDpC2JbgOEjJzsL0zDIyM4lFNj/uP0/vRXphMyE
+      dSQAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='240' name='대시보드 1' width='240'>
+      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
+      ZKa21vGTAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
